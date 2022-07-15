@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup form</title>
+    <script src="/home/muhamed/Desktop/training/js/comb.js"></script>
+</head>
+<body>
+    <h1>Signup Form</h1>
+    <form id="form"action="#"name="form1"onsubmit="return false">
+        <input type="text" placeholder="First Name" id="fname" name="fname">
+        <input type="text" placeholder="Last Name" id="lname" name="lname"> <br>
+        <input type="text" placeholder="Enter your email" id="email" name="text1" > <br>
+        <p id="alemail"></p>
+        <input type="date" id="dob" placeholder="Enter Date of birth"> <br>
+        <p id="demo"></p>
+        <select id="gender"onchange="">
+            <option value="gender" disabled selected hidden>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">other</option> </select> <br>
+        <input type="text" id="phno" onkeypress="return phnoo(event)" minlength="10" maxlength="10" placeholder="Phone Number"> <br>
+        <button type="submit" form="form" value="Submit" onclick="result()">Submit</button>
+        <button type="reset" form="form" value="reset" onclick="cancel()">Cancel</button>
+    </form>
+    <div id="Msg"></div>
+</body>
+</html>
